@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>LMSGI</title>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Examen 2a Evaluación 2021-2022" /> 
+		<meta name="author" content="Iván Jiménez" />
+		<meta name="alumno"  content="Lucía Romera Ferreiro"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type ="text/css"> 
+			* {
+				font-family: Cambria;
+				margin: 0px;
+				padding: 0px;
+			
+			}
+
+			/* Media query para tamaño máximo de 1100 px */
+			/* El color de fondo del área central pasaría a naranja */
+
+				
+			body {
+				background-color:lightgray;
+				
+
+			}
+
+			#titulo_tortura  {
+				position:absolute;
+				background-color: white;
+				top:100px;
+				left:800px;
+				width: 400px;
+				height: 40px;
+				border-radius: 10px;
+				border-style:dotted;
+				border-color: black;
+				text-align: center;
+				
+				color:black;
+				font-size: 25px;
+
+			}	
+			#explicacion #deslizante{
+				position:absolute;
+				background-color: white;
+				top:300px;
+				left:800px;
+				width: 400px;
+				height: 250px;
+				border-radius: 10px;
+				border-style:dotted;
+				border-color: black;
+			 	text-align: center;
+				color:black;
+				font-size: 25px;
+
+			}
+			
+			
+		
+			
+			
+			#pocion{
+				position:absolute;
+				width: 100px;
+				height: 100px;
+				top:500px;
+				left:1150px;
+			}
+		/* Estilos comunes a los cuatro divs del contenedor de cuadrados */			
+		.contenedor_cuadrados {
+			position:absolute;
+				background-color: white;
+				top:150px;
+				left:300px;
+				width:400px;
+				height: 400px;
+			    
+
+			}
+			/* Estilo del primer cuadradado (el rojo) */ 
+
+			.contenedor_cuadrados div{
+				position:absolute;
+				top:0px;
+				left:0px;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/*color y formato del texto */
+				color:white;
+				text-align:center;
+
+			}
+            
+
+			/* .contenedor_cuadrados div+div{
+				top:0px;
+				 left:600px;
+				 position:absolute;
+				 width: 300px;
+				 height: 300px;
+				 color:white;
+				 background-color: purple;
+				 text-align: center;
+				 font-size: 25px;
+				 font-variant-position:center;
+
+				
+			 }*/
+			/** .contenedor_cuadrados div+div+div{
+				top:1200px;
+				left:0px;
+				 position:absolute;
+				 width: 300px;
+				 height: 300px;
+				 color:white;
+				 background-color:yellow;
+				 text-align: center;
+				 font-size: 25px;
+				 font-variant-position:center;
+			 }*/
+			/*.contenedor_cuadrados div+div+div+div+div{
+				top:1200px;
+				left:0px;
+				 position:absolute;
+				 width: 300px;
+				 height: 300px;
+				 color:white;
+				 background-color:blue;
+				 text-align: center;
+				 font-size: 25px;
+				 font-variant-position:center;
+			 }*/
+
+		
+
+			/* Estilo del segundo cuadradado (el púrpura) */
+
+
+			/* Estilo del tercer cuadradado (el amarillo) */
+
+			
+			/* Estilo del cuarto cuadradado (el azul) */
+
+
+
+
+	
+		</style>
+		<script>
+			window.onload = function() {
+				/* Cambia la altura del elemento de clase deslizante */
+
+			}
+
+			function difumina() {
+				/* Fija la opacidad del área central a 0.2 */
+
+				/* Fija la opacidad de segundo botón a 0.2 */
+
+				/* Fija la opacidad de segundo botón a 0.1 */
+
+			}
+
+			function solidifica() {
+				/* Fija la opacidad del área central a 1 */
+
+				/* Fija la opacidad de segundo botón a 0.1 */
+
+				/* Fija la opacidad de segundo botón a 0.2 */
+
+			}
+			
+			function voltea() {
+				/* Rota o quita la rotación de 180 grados del contenedor de cuadrados */
+
+			}
+			
+			function contrasta() {
+				/* Obtén los divs que están dentro del contenedor de cuadrados */
+
+				/* Para cada div cambia el color: si esrá en negro lo pones en blanco 
+					y si está en blanco lo pones en negro */
+			}
+			
+			function D_gira_360(){
+
+			}
+			
+		</script>
+	</head>
+	<body>
+		<!-- Las capa de abajo muestran el tamaño mínimo que cambia el color de fondo -->
+		<div style="position: absolute; height: 10px; background-color: lime; top: 0px; left: 0px; right: 0px;"></div>
+		<div style="position: absolute; width: 1100px; height: 10px; background-color: orange; top: 10px; left: 0px;"></div>
+		<!-- Título -->
+		<div id="titulo_tortura" class="viñeta">Artilugio manipulador de capas</div>
+		
+		<!-- Zona gris que alberga botones y la capa con los cuadrados de colores -->
+		<div id="area_central">
+			<span class="boton" onclick="difumina()" >Difumina _</span>
+			<span class="boton" onclick="solidifica()" >Solidifica _</span>
+			<span class="boton" onclick="voltea();" >Voltea _</span>
+			<span class="boton" onclick="contrasta();" >Contrasta _</span>
+			
+			<!-- Capa con los cuadrados de colores -->
+			<div class="contenedor_cuadrados">
+				<div>A</div>
+				<div>B</div>
+				<div>C</div>
+				<div>D
+					<div class="flecha_abajo_giro"><img src="giro.png" onclick="D_gira_360()"/></div>
+				</div>	
+			</div>
+		</div>
+		
+	
+		<!-- Viñeta situada en la esquina inferior derecha. Se desvanece o aparece suavemente si se pulsa la imagen de la poción -->
+		<div id="explicacion" class="viñeta">
+			<div id="deslizante">
+			Resultados garantizados.<br/><br/>
+			¡Pruébelo! Si en siete días trabajando con él no ha tenido si quiera un simple dolor de cabeza, le devolvemos el dinero.
+			</div>
+		</div>
+		<img id="pocion" src="pocion.png"/>
+	</body>
+</html>
